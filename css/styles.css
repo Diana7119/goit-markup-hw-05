@@ -6,7 +6,6 @@
 
 
 
-
 :root {
     ---primary-background-color: #ffff;
     ---secondary-background-color: #2e2f42;
@@ -30,6 +29,7 @@ h4,
 h5,
 h6 {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .header {
@@ -110,18 +110,13 @@ ul {
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 0.02em;
-
     font-size: 16px;
     line-height: 1.5;
-
     display: inline-block;
     padding-top: 24px;
     padding-bottom: 24px;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
 }
 
 .link-studio.current {
@@ -241,14 +236,15 @@ ul {
     padding: 24px 0;
     color: var(---text-color);
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .link,
 .link-studio,
 .link-portfolio {
     display: block;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -337,6 +333,7 @@ ul {
     border: var(---primary-btn-color);
     padding: 12px 24px;
     margin-right: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -377,6 +374,7 @@ ul {
     padding: 16px 32px;
     margin: 0 auto;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-service:hover {
@@ -438,6 +436,7 @@ ul {
     cursor: pointer;
     border-radius: 4px;
     padding: 12px 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filter:active {
@@ -550,11 +549,14 @@ ul {
     text-decoration: none;
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 0;
-    padding: 0;
+
 }
 
 
+.img-card {
+    display: block;
+    min-width: 100%;
+}
 
 .section-box {
     position: relative;
@@ -669,6 +671,7 @@ ul {
     height: 100%;
     border-radius: 50%;
     background-color: var(---primary-btn-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover,
@@ -736,7 +739,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -839,6 +842,7 @@ ul {
     fill: var(--gray);
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-link:hover,
@@ -921,12 +925,9 @@ ul {
 
 
 .portfolio-content {
-
     padding: 32px 16px;
     border-right: 1px solid #E7E9FC;
-
     border-left: 1px solid #E7E9FC;
-
     border-bottom: 1px solid #E7E9FC;
 
 }
@@ -965,7 +966,6 @@ ul {
     max-width: 408px;
     max-height: 576px;
     background-color: var(---primary-background-color);
-
     transition: transform 500ms;
 }
 
